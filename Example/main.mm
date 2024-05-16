@@ -15,11 +15,13 @@ static bool _IsPNGFile(const fs::path& path) {
 int main(int argc, const char* argv[]) {
     using namespace std::chrono;
     
-    id <MTLDevice> device = MTLCreateSystemDefaultDevice();
+    const fs::path imagesDir = fs::path(argv[0]).parent_path() / "Images";
+    
+    id<MTLDevice> device = MTLCreateSystemDefaultDevice();
     Toastbox::Renderer renderer(device, [device newDefaultLibrary], [device newCommandQueue]);
     MTKTextureLoader* txtLoader = [[MTKTextureLoader alloc] initWithDevice:device];
     std::vector<id<MTLTexture>> txts;
-    for (const fs::path& p : fs::directory_iterator("/Users/dave/repos/FFCC-Metal/Example/Images")) @autoreleasepool {
+    for (const fs::path& p : fs::directory_iterator(imagesDir)) @autoreleasepool {
         if (_IsPNGFile(p)) {
             id<MTLTexture> txt = [txtLoader newTextureWithContentsOfURL:[NSURL fileURLWithPath:@(p.c_str())]
                 options:nil error:nil];

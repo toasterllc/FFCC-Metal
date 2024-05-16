@@ -19,17 +19,19 @@
 		55C1BE512BF59472004A4FAC /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE502BF59472004A4FAC /* CoreServices.framework */; };
 		55C1BE542BF5954C004A4FAC /* FFCCModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C1BE532BF5954C004A4FAC /* FFCCModel.mm */; };
 		55C1BE572BF59797004A4FAC /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE562BF59797004A4FAC /* MetalKit.framework */; };
+		55C1BE6E2BF5A021004A4FAC /* Images in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C1BE6D2BF5A01E004A4FAC /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		55C1BE032BF587BC004A4FAC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				55C1BE6E2BF5A021004A4FAC /* Images in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -89,6 +91,7 @@
 		55C1BE522BF5954C004A4FAC /* FFCCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFCCModel.h; path = ../FFCCModel.h; sourceTree = "<group>"; };
 		55C1BE532BF5954C004A4FAC /* FFCCModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FFCCModel.mm; path = ../FFCCModel.mm; sourceTree = "<group>"; };
 		55C1BE562BF59797004A4FAC /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		55C1BE6D2BF5A01E004A4FAC /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		55C1BDFC2BF587BC004A4FAC = {
 			isa = PBXGroup;
 			children = (
+				55C1BE6D2BF5A01E004A4FAC /* Images */,
 				55C1BE1F2BF592DC004A4FAC /* Lib */,
 				55C1BE132BF5884C004A4FAC /* FFCC.h */,
 				55C1BE122BF5884C004A4FAC /* FFCC.metal */,
