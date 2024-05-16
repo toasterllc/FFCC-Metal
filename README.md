@@ -16,6 +16,6 @@ The average time to process a single image (with the supplied example project) i
 
 ## Example
 
-See the `Example` directory for an example project that processes some static images.
+See the `Example` directory for an example project that runs FFCC on some static images.
 
 The `_F_fft0Vals` and `_F_fft1Vals` arrays are extracted from the MATLAB code after training on a set of images for the target image sensor.
