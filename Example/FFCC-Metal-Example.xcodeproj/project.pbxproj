@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55C1BE102BF587D0004A4FAC /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C1BE0F2BF587D0004A4FAC /* main.mm */; };
+		55C1BE142BF5884C004A4FAC /* FFCC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C1BE112BF5884C004A4FAC /* FFCC.mm */; };
+		55C1BE152BF5884C004A4FAC /* FFCC.metal in Sources */ = {isa = PBXBuildFile; fileRef = 55C1BE122BF5884C004A4FAC /* FFCC.metal */; };
+		55C1BE182BF58860004A4FAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE172BF58860004A4FAC /* Foundation.framework */; };
+		55C1BE1A2BF58863004A4FAC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE192BF58863004A4FAC /* Accelerate.framework */; };
+		55C1BE1C2BF58868004A4FAC /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE1B2BF58868004A4FAC /* Metal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55C1BE032BF587BC004A4FAC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55C1BE052BF587BC004A4FAC /* FFCC-Metal-Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FFCC-Metal-Example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C1BE0F2BF587D0004A4FAC /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		55C1BE112BF5884C004A4FAC /* FFCC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FFCC.mm; path = ../FFCC.mm; sourceTree = "<group>"; };
+		55C1BE122BF5884C004A4FAC /* FFCC.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = FFCC.metal; path = ../FFCC.metal; sourceTree = "<group>"; };
+		55C1BE132BF5884C004A4FAC /* FFCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFCC.h; path = ../FFCC.h; sourceTree = "<group>"; };
+		55C1BE172BF58860004A4FAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55C1BE192BF58863004A4FAC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		55C1BE1B2BF58868004A4FAC /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C1BE022BF587BC004A4FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C1BE182BF58860004A4FAC /* Foundation.framework in Frameworks */,
+				55C1BE1C2BF58868004A4FAC /* Metal.framework in Frameworks */,
+				55C1BE1A2BF58863004A4FAC /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C1BDFC2BF587BC004A4FAC = {
+			isa = PBXGroup;
+			children = (
+				55C1BE132BF5884C004A4FAC /* FFCC.h */,
+				55C1BE122BF5884C004A4FAC /* FFCC.metal */,
+				55C1BE112BF5884C004A4FAC /* FFCC.mm */,
+				55C1BE0F2BF587D0004A4FAC /* main.mm */,
+				55C1BE062BF587BC004A4FAC /* Products */,
+				55C1BE162BF58860004A4FAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55C1BE062BF587BC004A4FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C1BE052BF587BC004A4FAC /* FFCC-Metal-Example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C1BE162BF58860004A4FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C1BE1B2BF58868004A4FAC /* Metal.framework */,
+				55C1BE192BF58863004A4FAC /* Accelerate.framework */,
+				55C1BE172BF58860004A4FAC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C1BE042BF587BC004A4FAC /* FFCC-Metal-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C1BE0C2BF587BC004A4FAC /* Build configuration list for PBXNativeTarget "FFCC-Metal-Example" */;
+			buildPhases = (
+				55C1BE012BF587BC004A4FAC /* Sources */,
+				55C1BE022BF587BC004A4FAC /* Frameworks */,
+				55C1BE032BF587BC004A4FAC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FFCC-Metal-Example";
+			productName = "FFCC-Metal-Example";
+			productReference = 55C1BE052BF587BC004A4FAC /* FFCC-Metal-Example */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C1BDFD2BF587BC004A4FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					55C1BE042BF587BC004A4FAC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 55C1BE002BF587BC004A4FAC /* Build configuration list for PBXProject "FFCC-Metal-Example" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C1BDFC2BF587BC004A4FAC;
+			productRefGroup = 55C1BE062BF587BC004A4FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C1BE042BF587BC004A4FAC /* FFCC-Metal-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C1BE012BF587BC004A4FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C1BE102BF587D0004A4FAC /* main.mm in Sources */,
+				55C1BE142BF5884C004A4FAC /* FFCC.mm in Sources */,
+				55C1BE152BF5884C004A4FAC /* FFCC.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		55C1BE0B2BF587BC004A4FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		55C1BE0E2BF587BC004A4FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VXGM37B6Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C1BE002BF587BC004A4FAC /* Build configuration list for PBXProject "FFCC-Metal-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C1BE0B2BF587BC004A4FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C1BE0C2BF587BC004A4FAC /* Build configuration list for PBXNativeTarget "FFCC-Metal-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C1BE0E2BF587BC004A4FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55C1BDFD2BF587BC004A4FAC /* Project object */;
+}

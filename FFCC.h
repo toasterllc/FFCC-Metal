@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 #import <Metal/Metal.h>
-#import "Code/Lib/Toastbox/Mac/Mat.h"
-#import "Code/Lib/Toastbox/Mac/CFA.h"
-#import "Code/Lib/Toastbox/Mac/Renderer.h"
+#import "Lib/Toastbox/Mac/Mat.h"
+#import "Lib/Toastbox/Mac/CFA.h"
+#import "Lib/Toastbox/Mac/Renderer.h"
 
 class FFCC {
 public:

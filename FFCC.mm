@@ -1,8 +1,8 @@
 #import "FFCC.h"
-#import "Code/Lib/Toastbox/Mac/Color.h"
-#import "Code/Lib/Toastbox/Mac/MetalUtil.h"
-#import "Code/Lib/Toastbox/Mac/Renderer.h"
-#import "Code/Lib/Toastbox/Mac/Mod.h"
+#import "Lib/Toastbox/Mac/Color.h"
+#import "Lib/Toastbox/Mac/MetalUtil.h"
+#import "Lib/Toastbox/Mac/Renderer.h"
+#import "Lib/Toastbox/Mac/Mod.h"
 using namespace Toastbox;
 
 using Mat64     = FFCC::Mat64;

@@ -1,7 +1,7 @@
 #import <metal_stdlib>
-#import "Code/Lib/Toastbox/Mac/MetalUtil.h"
-#import "Code/Lib/Toastbox/Mac/Mod.h"
-#import "Code/Lib/Toastbox/Mac/CFA.h"
+#import "Lib/Toastbox/Mac/MetalUtil.h"
+#import "Lib/Toastbox/Mac/Mod.h"
+#import "Lib/Toastbox/Mac/CFA.h"
 using namespace metal;
 using namespace Toastbox;
 using namespace Toastbox::MetalUtil;
