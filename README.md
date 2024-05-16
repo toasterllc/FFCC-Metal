@@ -10,7 +10,7 @@ See [this blog post](http://toaster.llc/blog/image-pipeline) for more info about
 
 ## Performance
 
-The average time to process a single image (with the supplied example project) is ~1.9 ms on an Apple M3 MacBook Pro.
+The average time to process a single image (with the included example project) is ~1.9 ms on an Apple M3 MacBook Pro.
 
 
 
