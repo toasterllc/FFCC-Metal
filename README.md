@@ -12,6 +12,8 @@ See [this blog post](http://toaster.llc/blog/image-pipeline) for more info about
 
 The average time to process a single image (with the included example project) is ~1.9 ms on an Apple M3 MacBook Pro.
 
+The performance could be improved further but effort hasn't been invested to do so because the existing performance is fine for Photon's needs.
+
 
 
 ## Example
