@@ -1,10 +1,10 @@
 # FFCC-Metal
 
-This repo implements [Fast Fourier Color Constancy (FFCC)](https://github.com/google/ffcc) with C++ and Metal shaders. It's primarily a translation of the original MATLAB code.
+This repo implements [Fast Fourier Color Constancy (FFCC)](https://github.com/google/ffcc) with C++ and Metal shaders. It's primarily a translation of the original MATLAB code to Metal.
 
 This repo is used by the [Photon](https://toaster.llc/photon) camera to implement white balancing.
 
-See [this blog post](http://toaster.llc/blog/image-pipeline) for more info.
+See [this blog post](http://toaster.llc/blog/image-pipeline) for more info about Photon's image pipeline.
 
 
 
