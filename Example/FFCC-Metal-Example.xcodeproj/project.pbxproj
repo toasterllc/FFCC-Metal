@@ -18,6 +18,7 @@
 		55C1BE4F2BF5943C004A4FAC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE4E2BF5943C004A4FAC /* ImageIO.framework */; };
 		55C1BE512BF59472004A4FAC /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE502BF59472004A4FAC /* CoreServices.framework */; };
 		55C1BE542BF5954C004A4FAC /* FFCCModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C1BE532BF5954C004A4FAC /* FFCCModel.mm */; };
+		55C1BE572BF59797004A4FAC /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1BE562BF59797004A4FAC /* MetalKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,7 @@
 		55C1BE502BF59472004A4FAC /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		55C1BE522BF5954C004A4FAC /* FFCCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFCCModel.h; path = ../FFCCModel.h; sourceTree = "<group>"; };
 		55C1BE532BF5954C004A4FAC /* FFCCModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FFCCModel.mm; path = ../FFCCModel.mm; sourceTree = "<group>"; };
+		55C1BE562BF59797004A4FAC /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				55C1BE4D2BF59430004A4FAC /* CoreGraphics.framework in Frameworks */,
 				55C1BE4F2BF5943C004A4FAC /* ImageIO.framework in Frameworks */,
 				55C1BE512BF59472004A4FAC /* CoreServices.framework in Frameworks */,
+				55C1BE572BF59797004A4FAC /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +135,7 @@
 		55C1BE162BF58860004A4FAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55C1BE562BF59797004A4FAC /* MetalKit.framework */,
 				55C1BE502BF59472004A4FAC /* CoreServices.framework */,
 				55C1BE4E2BF5943C004A4FAC /* ImageIO.framework */,
 				55C1BE4C2BF59430004A4FAC /* CoreGraphics.framework */,
