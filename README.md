@@ -2,7 +2,7 @@
 
 This repo implements illuminant estimation via [Fast Fourier Color Constancy (FFCC)](https://github.com/google/ffcc) with C++ and Metal shaders. It's primarily a translation of the original MATLAB code to Metal.
 
-This repo is used by the [Photon](https://toaster.llc/photon) camera to implement white balancing.
+This code is used by [Photon](https://toaster.llc/photon)'s image pipeline to implement highlight reconstruction and white balancing.
 
 See [this blog post](http://toaster.llc/blog/image-pipeline) for more info about Photon's image pipeline.
 
