@@ -42,6 +42,7 @@ int main(int argc, const char* argv[]) {
             for (id<MTLTexture> txt : txts) {
                 FFCCModel::Run(renderer, txt);
             }
+            renderer.commitAndWait();
         }
         
         const microseconds duration = duration_cast<microseconds>(steady_clock::now()-timeStart);
