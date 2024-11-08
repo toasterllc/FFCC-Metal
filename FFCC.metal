@@ -119,20 +119,22 @@ uint32_t binForPos(uint32_t binCount, uint32_t y, uint32_t x) {
     return x*binCount + y; // Column-major layout
 }
 
-fragment void CalcHistogram(
+kernel void CalcHistogram(
     constant uint32_t& binCount [[buffer(0)]],
     device atomic_uint* bins [[buffer(1)]],
     texture2d<float> u [[texture(0)]],
     texture2d<float> v [[texture(1)]],
     texture2d<float> mask [[texture(2)]],
-    VertexOutput in [[stage_in]]
+    uint2 gid [[thread_position_in_grid]]
 ) {
-    const int2 pos = int2(in.pos.xy);
-    const float m = Sample::R(mask, pos);
+    const uint2 pos = gid.xy;
+    // Bounds check is necessary when using -dispatchThreadgroups:threadsPerThreadgroup:
+    if (pos.x>=u.get_width() || pos.y>=u.get_height()) return;
+    const float m = mask.read(pos).r;
     // Ignore this pixel if it's masked
     if (m == 0) return;
-    const uint32_t y = round(Sample::R(u, pos)-1);
-    const uint32_t x = round(Sample::R(v, pos)-1);
+    const uint32_t y = round(u.read(pos).r-1);
+    const uint32_t x = round(v.read(pos).r-1);
     const uint32_t bin = binForPos(binCount, y, x);
     atomic_fetch_add_explicit(&bins[bin], 1, memory_order_relaxed);
 }

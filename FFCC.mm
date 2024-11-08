@@ -113,8 +113,8 @@ static Mat64 _calcXFromImage(const FFCC::Model& model, Renderer& renderer, id<MT
     Renderer::Buf binsBuf = renderer.bufferCreate(binsBufLen, MTLStorageModeManaged);
     renderer.bufferClear(binsBuf);
     
-    renderer.render(w, h,
-        renderer.FragmentShader(_ShaderNamespace "CalcHistogram",
+    renderer.compute(w, h,
+        renderer.ComputeKernel(_ShaderNamespace "CalcHistogram",
             // Buffer args
             binCount,
             binsBuf,
